@@ -78,7 +78,7 @@ class _BanglaIslamicSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'মাওলা ইয়্য সল্লি ওয়া সাল্লিম',
+                  title: 'মাওলা ইয়া সল্লি ওয়া সল্লিম',
                   onTap: () {
                     Get.to(() => const ArabicOneScreen());
                   },
