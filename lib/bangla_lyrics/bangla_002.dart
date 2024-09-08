@@ -69,6 +69,7 @@ class BanglaTwoScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 10),
           ],
         ),
       ),

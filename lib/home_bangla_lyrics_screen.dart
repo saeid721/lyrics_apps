@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'arabic_lyrics/arabic_001.dart';
 import 'bangla_lyrics/bangla_002.dart';
+import 'bangla_lyrics/bangla_003.dart';
+import 'bangla_lyrics/bangla_004.dart';
+import 'bangla_lyrics/bangla_005.dart';
 import 'widget/chapter_item_widget.dart';
 import 'bangla_lyrics/bangla_001.dart';
 import 'widget/colors.dart';
@@ -53,7 +57,7 @@ class _BanglaIslamicSongsLyricListScreenState
               children: [
                 const SizedBox(height: 10),
                 ChapterItem(
-                  title: 'দুনিয়া সুন্দর, মানুষ সুন্দর',
+                  title: "হে প্রভু রহম করো আমার মা'কে",
                   onTap: () {
                     Get.to(() => const BanglaOneScreen());
                   },
@@ -67,30 +71,30 @@ class _BanglaIslamicSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'তৃতীয়',
+                  title: 'দুনিয়া সুন্দর, মানুষ সুন্দর',
                   onTap: () {
-                    Get.to(() => const BanglaOneScreen());
+                    Get.to(() => const BanglaThreeScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'চতুর্থ',
+                  title: 'মাওলা ইয়্য সল্লি ওয়া সাল্লিম',
                   onTap: () {
-                    Get.to(() => const BanglaOneScreen());
+                    Get.to(() => const ArabicOneScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'পঞ্চম',
                   onTap: () {
-                    Get.to(() => const BanglaOneScreen());
+                    Get.to(() => const BanglaFourScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'ষষ্ঠ',
                   onTap: () {
-                    Get.to(() => const BanglaOneScreen());
+                    Get.to(() => const BanglaFiveScreen());
                   },
                 ),
               ],
