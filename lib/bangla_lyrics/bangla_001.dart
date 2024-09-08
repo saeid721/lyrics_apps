@@ -4,8 +4,8 @@ import '../widget/colors.dart';
 import '../widget/global_container.dart';
 import '../widget/global_text.dart';
 
-class ChapterOneScreen extends StatelessWidget {
-  const ChapterOneScreen({super.key});
+class BanglaOneScreen extends StatelessWidget {
+  const BanglaOneScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,8 @@ class ChapterOneScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         shadowColor: ColorRes.border,
-        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: Colors.white,
+        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
           'দুনিয়া সুন্দর, মানুষ সুন্দর',
           style: TextStyle(
@@ -23,7 +24,6 @@ class ChapterOneScreen extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -36,6 +36,7 @@ class ChapterOneScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: GlobalContainer(
                   backgroundColor: ColorRes.white,
+                  elevation: 2.0,
                   borderCornerRadius: BorderRadius.circular(5),
                   width: Get.width,
                   child: const Padding(

@@ -45,7 +45,7 @@ class GlobalText extends StatelessWidget {
     final double fontHeight = h * fw;
 
     final textStyle = TextStyle(
-      color: color ?? ColorRes.black,
+      color: color ?? ColorRes.primaryColor,
       fontSize: fontSize,
       fontWeight: fontWeight,
       letterSpacing: letterSpacing,

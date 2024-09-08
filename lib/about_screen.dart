@@ -12,22 +12,22 @@ class AboutUsScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         shadowColor: ColorRes.border,
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
-          'Welcome to Islamic Songs Lyrics',
+          'Islamic Songs Lyrics',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            color: Colors.white,
+            color: ColorRes.primaryColor,
           ),
         ),
         centerTitle: true,
-        backgroundColor: ColorRes.primaryColor,
+        backgroundColor: Colors.white,
       ),
       body: const SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 10),
+            SizedBox(height: 50),
             GlobalText(
               str: "Welcome to Islamic Songs Lyrics",
               fontSize: 22,
@@ -47,11 +47,8 @@ class AboutUsScreen extends StatelessWidget {
                     str:
                         """Whether you're looking for Nasheeds, Qawwali, or other traditional Islamic lyrics, you'll find a diverse collection that inspires and uplifts. Our goal is to make it easy for you to explore, learn, and reflect on these spiritual songs. Discover words that resonate with your heart and soul, and find meaning in every lyric!
                         """,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w400,
-                    textAlign: TextAlign.justify,
-                    fontFamily: 'Rubik',
-                    isSelectable: true,
+                    fontSize: 15,
+                    color: ColorRes.black,
                   ),
                   SizedBox(height: 10),
                 ],

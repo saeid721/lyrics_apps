@@ -11,17 +11,17 @@ class ContactUsScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         shadowColor: ColorRes.border,
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
           'Contact Us',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            color: Colors.white,
+            color: ColorRes.primaryColor,
           ),
         ),
         centerTitle: true,
-        backgroundColor: ColorRes.primaryColor,
+        backgroundColor: Colors.white,
       ),
       body: const SingleChildScrollView(
         child: Column(
@@ -42,20 +42,19 @@ class ContactUsScreen extends StatelessWidget {
 আমাদের ফেসবুক পেজের লিঙ্ক -
 """,
                     fontWeight: FontWeight.w500,
-                    textAlign: TextAlign.center,
+                    fontSize: 14,
+                    color: ColorRes.black,
                   ),
                   GlobalText(
                     str: "www.facebook.com/FlutterBangla",
                     fontSize: 17,
                     fontWeight: FontWeight.w700,
-                    textAlign: TextAlign.center,
                     color: ColorRes.primaryColor,
                   ),
                   SizedBox(height: 100),
                   GlobalText(
                     str: "www.flutterbangla.blogspot.com",
                     fontWeight: FontWeight.w700,
-                    textAlign: TextAlign.center,
                     color: ColorRes.primaryColor,
                     fontSize: 18,
                   ),
