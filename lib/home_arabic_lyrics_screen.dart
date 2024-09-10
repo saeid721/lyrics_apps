@@ -15,14 +15,6 @@ class ArabicIslamicSongsLyricListScreen extends StatefulWidget {
 
 class _ArabicIslamicSongsLyricListScreenState
     extends State<ArabicIslamicSongsLyricListScreen> {
-  int currentIndex = 0;
-
-  setBottomBarIndex(index) {
-    setState(() {
-      currentIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
