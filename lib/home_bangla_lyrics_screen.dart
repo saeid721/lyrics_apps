@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'arabic_lyrics/arabic_001.dart';
+import 'bangla_lyrics/bangla_001.dart';
 import 'bangla_lyrics/bangla_002.dart';
 import 'bangla_lyrics/bangla_003.dart';
 import 'bangla_lyrics/bangla_004.dart';
@@ -31,9 +31,8 @@ import 'bangla_lyrics/bangla_028.dart';
 import 'bangla_lyrics/bangla_029.dart';
 import 'bangla_lyrics/bangla_030.dart';
 import 'widget/chapter_item_widget.dart';
-import 'bangla_lyrics/bangla_001.dart';
+import 'arabic_lyrics/arabic_001.dart';
 import 'widget/colors.dart';
-import 'widget/sidebar_menu_widget.dart';
 
 class BanglaIslamicSongsLyricListScreen extends StatefulWidget {
   const BanglaIslamicSongsLyricListScreen({super.key});

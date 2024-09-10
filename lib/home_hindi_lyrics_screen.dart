@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'widget/chapter_item_widget.dart';
 import 'bangla_lyrics/bangla_001.dart';
 import 'widget/colors.dart';
-import 'widget/sidebar_menu_widget.dart';
 
 class HindiIslamicSongsLyricListScreen extends StatefulWidget {
   const HindiIslamicSongsLyricListScreen({super.key});

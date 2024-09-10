@@ -4,7 +4,6 @@ import 'arabic_lyrics/arabic_001.dart';
 import 'widget/chapter_item_widget.dart';
 import 'bangla_lyrics/bangla_001.dart';
 import 'widget/colors.dart';
-import 'widget/sidebar_menu_widget.dart';
 
 class ArabicIslamicSongsLyricListScreen extends StatefulWidget {
   const ArabicIslamicSongsLyricListScreen({super.key});
