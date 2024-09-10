@@ -34,7 +34,7 @@ class SideberMenuWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: const Text('About Writer'),
+            title: const Text('About App'),
             leading: const Icon(Icons.person_outline_outlined,
                 color: ColorRes.primaryColor),
             onTap: () {
@@ -86,7 +86,7 @@ class SideberMenuWidget extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
-                    color: Colors.grey,
+                    color: ColorRes.secondaryColor,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -103,7 +103,8 @@ class SideberMenuWidget extends StatelessWidget {
                   'Fb.com/FlutterBangla',
                   style: TextStyle(
                     fontSize: 10,
-                    fontWeight: FontWeight.w300,
+                    fontWeight: FontWeight.w400,
+                    color: ColorRes.secondaryColor,
                   ),
                   textAlign: TextAlign.center,
                 ),
