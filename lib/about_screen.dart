@@ -35,6 +35,7 @@ class AboutUsScreen extends StatelessWidget {
               textAlign: TextAlign.left,
               fontFamily: 'Rubik',
               color: ColorRes.primaryColor,
+              isSelectable: false,
             ),
             SizedBox(height: 10),
             Padding(
@@ -45,10 +46,17 @@ class AboutUsScreen extends StatelessWidget {
                 children: [
                   GlobalText(
                     str:
-                        """Whether you're looking for Nasheeds, Qawwali, or other traditional Islamic lyrics, you'll find a diverse collection that inspires and uplifts. Our goal is to make it easy for you to explore, learn, and reflect on these spiritual songs. Discover words that resonate with your heart and soul, and find meaning in every lyric!
+                        """Welcome to Islamic Songs Lyrics, where you'll discover a rich collection that inspires and helps you enjoy the beauty of your favorite song lyrics! Whether you're passionate about singing, a karaoke lover, or someone who appreciates meaningful words, our platform is crafted to bring you closer to the songs that speak to your soul.
+
+We offer an extensive selection of song lyrics from various genres, cultures, and languages, with a special emphasis on Islamic songs. Our aim is to provide an easy, seamless experience for anyone seeking to connect with meaningful and inspirational lyrics.
+
+At Islamic Songs Lyrics, we believe that lyrics hold the power to evoke emotions, share stories, and spread positivity. That’s why we are dedicated to curating a broad range of lyrics, from timeless treasures to contemporary favorites, all available on a user-friendly platform.
+
+Join us in exploring the beauty of words through song, and let this journey inspire you!
                         """,
                     fontSize: 15,
                     color: ColorRes.black,
+                    isSelectable: false,
                   ),
                   SizedBox(height: 10),
                 ],

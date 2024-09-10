@@ -44,12 +44,14 @@ class ContactUsScreen extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     fontSize: 14,
                     color: ColorRes.black,
+                    isSelectable: false,
                   ),
                   GlobalText(
                     str: "www.facebook.com/FlutterBangla",
                     fontSize: 17,
                     fontWeight: FontWeight.w700,
                     color: ColorRes.primaryColor,
+                    isSelectable: false,
                   ),
                   SizedBox(height: 100),
                   GlobalText(
@@ -57,6 +59,7 @@ class ContactUsScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: ColorRes.primaryColor,
                     fontSize: 18,
+                    isSelectable: false,
                   ),
                 ],
               ),
