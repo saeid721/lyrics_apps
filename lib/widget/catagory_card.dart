@@ -5,14 +5,14 @@ const double cardHeight = 180.0;
 const double imageWidth = 80.0;
 const double imageHeight = 80.0;
 
-class DowaChapterCard extends StatelessWidget {
-  final String imagePath;
+class CatagoryCard extends StatelessWidget {
+  final String? imagePath; // Make imagePath optional
   final String title;
   final VoidCallback onTap;
 
-  const DowaChapterCard({
+  const CatagoryCard({
     super.key,
-    required this.imagePath,
+    this.imagePath, // imagePath can be null
     required this.title,
     required this.onTap,
   });
@@ -33,23 +33,31 @@ class DowaChapterCard extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             color: ColorRes.white,
+            border: const Border(
+              bottom: BorderSide(
+                color: ColorRes.border, // Define the color of the bottom border
+                width: 1.0, // Set the thickness of the bottom border
+              ),
+            ),
           ),
           padding: const EdgeInsets.all(5),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                imagePath,
-                width: imageWidth,
-                height: imageHeight,
-                fit: BoxFit.cover,
-              ),
+              if (imagePath != null)
+                Image.asset(
+                  imagePath!,
+                  width: imageWidth,
+                  height: imageHeight,
+                  fit: BoxFit.cover,
+                ),
               const SizedBox(height: 5),
               Text(
                 title,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 12,
+                  fontSize: 22,
+                  color: ColorRes.primaryColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),

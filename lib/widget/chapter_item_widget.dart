@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pinaki/widget/colors.dart';
+
+import 'colors.dart';
 
 class ChapterItem extends StatelessWidget {
   final String title;
@@ -36,6 +37,12 @@ class ChapterItem extends StatelessWidget {
               topRight: Radius.circular(10.0),
               bottomLeft: Radius.circular(10.0),
             ), // Add top-right and bottom-left border radius
+            border: const Border(
+              bottom: BorderSide(
+                color: ColorRes.border, // Set the bottom border color
+                width: 1.0, // Set the border width
+              ),
+            ), // Add bottom border with primary color
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +57,7 @@ class ChapterItem extends StatelessWidget {
               ),
               Icon(
                 icon,
-                color: Colors.grey,
+                color: ColorRes.border,
                 size: 16,
               ),
             ],

@@ -33,11 +33,12 @@ class BanglaFourteenScreen extends StatelessWidget {
               backgroundColor: ColorRes.background,
               width: Get.width,
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(15),
                 child: GlobalContainer(
                   backgroundColor: ColorRes.white,
                   elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(5),
+                  borderCornerRadius: BorderRadius.circular(10),
+                  bottomBorderColor: ColorRes.border,
                   width: Get.width,
                   child: const Padding(
                     padding: EdgeInsets.all(10),
@@ -75,7 +76,6 @@ class BanglaFourteenScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
           ],
         ),
       ),

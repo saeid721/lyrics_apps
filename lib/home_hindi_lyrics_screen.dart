@@ -32,7 +32,7 @@ class _HindiIslamicSongsLyricListScreenState
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
-          'Islamic Songs Lyrics',
+          'Islamic Hindi Songs Lyrics',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
@@ -42,7 +42,6 @@ class _HindiIslamicSongsLyricListScreenState
         centerTitle: true,
         //backgroundColor: ColorRes.title,
       ),
-      drawer: const SideberMenuWidget(),
       body: SafeArea(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,

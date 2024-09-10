@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_bangla_lyrics_screen.dart';
+import 'catagory_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -8,8 +8,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-            builder: (context) => const BanglaIslamicSongsLyricListScreen()),
+        MaterialPageRoute(builder: (context) => const CatagoryHomeScreen()),
       );
     });
 
