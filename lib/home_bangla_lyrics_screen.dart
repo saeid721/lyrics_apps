@@ -20,16 +20,6 @@ import 'bangla_lyrics/bangla_017.dart';
 import 'bangla_lyrics/bangla_018.dart';
 import 'bangla_lyrics/bangla_019.dart';
 import 'bangla_lyrics/bangla_020.dart';
-import 'bangla_lyrics/bangla_021.dart';
-import 'bangla_lyrics/bangla_022.dart';
-import 'bangla_lyrics/bangla_023.dart';
-import 'bangla_lyrics/bangla_024.dart';
-import 'bangla_lyrics/bangla_025.dart';
-import 'bangla_lyrics/bangla_026.dart';
-import 'bangla_lyrics/bangla_027.dart';
-import 'bangla_lyrics/bangla_028.dart';
-import 'bangla_lyrics/bangla_029.dart';
-import 'bangla_lyrics/bangla_030.dart';
 import 'widget/chapter_item_widget.dart';
 import 'arabic_lyrics/arabic_001.dart';
 import 'widget/colors.dart';
@@ -79,6 +69,48 @@ class _BanglaIslamicSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
+                  title: 'একটু দারাও মায়রে দেখি',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'যে মা আমায় ছোট্ট থেকে',
+                  onTap: () {
+                    Get.to(() => const BanglaFourScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'চলে গেছো তুমি মা',
+                  onTap: () {
+                    Get.to(() => const BanglaSevenScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'বাবা তুমি কেমন আছো',
+                  onTap: () {
+                    Get.to(() => const BanglaFiveScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'বাবা মানে হাজার বিকেল',
+                  onTap: () {
+                    Get.to(() => const BanglaFourteenScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'সাজিয়ে গুজিয়ে দে',
+                  onTap: () {
+                    Get.to(() => const BanglaEightScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
                   title: 'আমার বড় কষ্ট হয়',
                   onTap: () {
                     Get.to(() => const BanglaTwoScreen());
@@ -93,37 +125,9 @@ class _BanglaIslamicSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'যে মা আমায় ছোট্ট থেকে',
-                  onTap: () {
-                    Get.to(() => const BanglaFourScreen());
-                  },
-                ),
-                const SizedBox(height: 5),
-                ChapterItem(
-                  title: 'বাবা তুমি কেমন আছো',
-                  onTap: () {
-                    Get.to(() => const BanglaFiveScreen());
-                  },
-                ),
-                const SizedBox(height: 5),
-                ChapterItem(
                   title: 'এমন মরন মাওলা তুমি কাওকে দিওনা',
                   onTap: () {
                     Get.to(() => const BanglaSixScreen());
-                  },
-                ),
-                const SizedBox(height: 5),
-                ChapterItem(
-                  title: 'চলে গেছো তুমি মা',
-                  onTap: () {
-                    Get.to(() => const BanglaSevenScreen());
-                  },
-                ),
-                const SizedBox(height: 5),
-                ChapterItem(
-                  title: 'সাজিয়ে গুজিয়ে দে',
-                  onTap: () {
-                    Get.to(() => const BanglaEightScreen());
                   },
                 ),
                 const SizedBox(height: 5),
@@ -159,13 +163,6 @@ class _BanglaIslamicSongsLyricListScreenState
                   title: 'ওগো কাবার মালিক',
                   onTap: () {
                     Get.to(() => const BanglaThirteenScreen());
-                  },
-                ),
-                const SizedBox(height: 5),
-                ChapterItem(
-                  title: 'বাবা মানে হাজার বিকেল',
-                  onTap: () {
-                    Get.to(() => const BanglaFourteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
@@ -210,13 +207,6 @@ class _BanglaIslamicSongsLyricListScreenState
                     Get.to(() => const ArabicOneScreen());
                   },
                 ),
-                const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyScreen());
-                //   },
-                // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
