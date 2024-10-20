@@ -20,6 +20,7 @@ import 'bangla_lyrics/bangla_017.dart';
 import 'bangla_lyrics/bangla_018.dart';
 import 'bangla_lyrics/bangla_019.dart';
 import 'bangla_lyrics/bangla_020.dart';
+import 'bangla_lyrics/bangla_021.dart';
 import 'widget/chapter_item_widget.dart';
 import 'arabic_lyrics/arabic_001.dart';
 import 'widget/colors.dart';
@@ -202,18 +203,18 @@ class _BanglaIslamicSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
+                  title: 'মুক্তির মন্দির সোপান তলে',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyOneScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
                   title: 'মাওলা ইয়া সল্লি ওয়া সল্লিম',
                   onTap: () {
                     Get.to(() => const ArabicOneScreen());
                   },
                 ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyOneScreen());
-                //   },
-                // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
