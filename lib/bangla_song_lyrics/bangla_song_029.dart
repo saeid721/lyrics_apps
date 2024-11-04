@@ -16,7 +16,7 @@ class BanglaTwentyNineScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
-          "Lorem",
+          "তখন তোমার একুশ বছর বোধ হয়",
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700,
@@ -42,7 +42,36 @@ class BanglaTwentyNineScreen extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(10),
                     child: GlobalText(
-                      str: """Lorem""",
+                      str: """তখন তোমার একুশ বছর বোধ হয়
+আমি তখন অষ্টাদশীর ছোঁওয়ায়
+লজ্জা জড়ানো ছন্দে কেঁপেছি
+ধরা পড়ি ছিল ভয়
+
+তখন তোমার একুশ বছর বোধ হয়
+আমি তখন অষ্টাদশীর ছোঁওয়ায়
+ও....ও....
+
+গোপনের প্রেম গোপনে গিয়েছে ঝরে
+আমরা দুজনে কখন গিয়েছি সরে
+ফুলঝুরি থেকে ফুল ঝরে গেলে
+মালা কিসে গাঁথা হয়
+
+তখন তোমার একুশ বছর বোধ হয়
+আমি তখন অষ্টাদশীর ছোঁওয়ায়
+
+তোমার পথের কাঁটাই ভেবেছ মোরে
+বলতে পারিনি তোমার মত করে
+জলছবি ভেবে ভুল করেছিলে
+ভালবাসা সে তো নয়
+
+তখন তোমার একুশ বছর বোধ হয়
+আমি তখন অষ্টাদশীর ছোঁওয়ায়
+লজ্জা জড়ানো ছন্দে কেঁপেছি
+ধরা পড়ি ছিল ভয়
+
+তখন তোমার একুশ বছর বোধ হয়
+আমি তখন অষ্টাদশীর ছোঁওয়ায়
+লা লা লা লা লা লা""",
                     ),
                   ),
                 ),

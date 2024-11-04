@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'bangla_lyrics/bangla_022.dart';
+import 'bangla_lyrics/bangla_023.dart';
+import 'bangla_lyrics/bangla_024.dart';
+import 'bangla_lyrics/bangla_025.dart';
+import 'bangla_lyrics/bangla_026.dart';
+import 'bangla_lyrics/bangla_027.dart';
+import 'bangla_lyrics/bangla_028.dart';
+import 'bangla_lyrics/bangla_029.dart';
+import 'bangla_lyrics/bangla_030.dart';
 import 'bangla_song_lyrics/bangla_song_001.dart';
 import 'bangla_song_lyrics/bangla_song_002.dart';
 import 'bangla_song_lyrics/bangla_song_003.dart';
@@ -13,6 +22,8 @@ import 'bangla_song_lyrics/bangla_song_010.dart';
 import 'bangla_song_lyrics/bangla_song_011.dart';
 import 'bangla_song_lyrics/bangla_song_012.dart';
 import 'bangla_song_lyrics/bangla_song_013.dart';
+import 'bangla_song_lyrics/bangla_song_031.dart';
+import 'bangla_song_lyrics/bangla_song_032.dart';
 import 'widget/chapter_item_widget.dart';
 import 'arabic_lyrics/arabic_001.dart';
 import 'widget/colors.dart';
@@ -146,83 +157,83 @@ class _BanglaSongsLyricListScreenState
                   },
                 ),
                 const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'আমি',
-                //   onTap: () {
-                //     Get.to(() => const BanglaFourteenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'আমি',
-                //   onTap: () {
-                //     Get.to(() => const BanglaFifteenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'আমি',
-                //   onTap: () {
-                //     Get.to(() => const BanglaSixteenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'নামাজকে',
-                //   onTap: () {
-                //     Get.to(() => const BanglaSeventeenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'মসজিদেরই',
-                //   onTap: () {
-                //     Get.to(() => const BanglaEightteenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'হাজার',
-                //   onTap: () {
-                //     Get.to(() => const BanglaNineteenScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyOneScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyTwoScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyThreeScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
-                // ChapterItem(
-                //   title: 'Lorem',
-                //   onTap: () {
-                //     Get.to(() => const BanglaTwentyFourScreen());
-                //   },
-                // ),
-                // const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'মানুষ একটা দুই চাকার সাইকেল',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyThreeScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'ও বন্ধুরে তুমি মোরে ভুইলা যাইও না',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyFourScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'দেখেছি রুপ সাগরে মনের মানুষ',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyFiveScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'এসব দেখি কানার হাট বাজার',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentySixScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'এখনো মাঝে মাঝে',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentySevenScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'বন্ধু তোমায় মনে পড়ে',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyTwoScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'কত আদর সোহাগ দিলাম',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyEightScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'তখন তোমার একুশ বছর বোধ হয়',
+                  onTap: () {
+                    Get.to(() => const BanglaTwentyNineScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'দেখা হবে, বন্ধু, কারণে আর অকারণে',
+                  onTap: () {
+                    Get.to(() => const BanglaThirtyScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'যেদিন বন্ধু চলে যাবো',
+                  onTap: () {
+                    Get.to(() => const BanglaThirtyOneScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'কফি হাউজের সেই আড্ডাটা',
+                  onTap: () {
+                    Get.to(() => const BanglaThirtyTwoScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {

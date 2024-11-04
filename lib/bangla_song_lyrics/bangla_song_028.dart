@@ -16,7 +16,7 @@ class BanglaTwentyEightScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
-          "আমার মতো এতো সুখী নয় তো কারো জীবন",
+          "কত আদর সোহাগ দিলাম",
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w700,
@@ -43,7 +43,33 @@ class BanglaTwentyEightScreen extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(10),
                     child: GlobalText(
-                      str: """Lorem""",
+                      str: """কত আদর সোহাগ দিলাম
+জীবন যৌবন সব সঁপিলাম
+বুকে আগলায় রাইখাও তোমায়
+হইলাম আজ অচেনা
+আমি তোমার বিনা মূল্যে কেনা
+বন্ধুরে
+আমি তোমার বিনা মূল্যে কেনা!!
+
+মন যদিরে কেনা যেত
+শুধু মনের দামে
+তোমারে গো পাইতাম সখা
+ নামে বদনামে
+কলিজা কাটিয়া দিলাম
+তবু আমার রইলানা
+আমি তোমার বিনা মূল্যে কেনা
+বন্ধুরে
+আমি তোমার বিনা মূল্যে কেনা!!
+
+মিছে মায়ায় বাইন্ধা মোরে
+করলা প্রেমে অন্ধ
+আমারে না লইয়া বুকে
+করলা দুয়ার বন্ধ
+জন্মে জন্মে কাঙাল মুরাদ 
+তুমি ভিন্ন বুঝেনা
+আমি তোমার বিনা মূল্যে কেনা
+বন্ধুরে
+আমি তোমার বিনা মূল্যে কেনা!!""",
                     ),
                   ),
                 ),
