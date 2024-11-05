@@ -6,8 +6,8 @@ import 'home_bangla_song_lyrics_screen.dart';
 import 'home_english_lyrics_screen.dart';
 import 'home_hindi_lyrics_screen.dart';
 import 'home_urdhu_lyrics_screen.dart';
-import 'widget/colors.dart';
 import 'widget/catagory_card.dart';
+import 'widget/global_app_bar.dart';
 import 'widget/sidebar_menu_widget.dart';
 
 class CategoryHomeScreen extends StatefulWidget {
@@ -21,19 +21,8 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: ColorRes.white,
-        title: const Text(
-          'Islamic Songs Lyrics',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+      appBar: const GlobalAppBar(
+        title: "Islamic Songs Lyrics",
       ),
       drawer: const SideberMenuWidget(),
       body: SafeArea(

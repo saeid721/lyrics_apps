@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'widget/chapter_item_widget.dart';
+import 'widget/global_app_bar.dart';
+import 'arabic_lyrics/arabic_001.dart';
 import 'bangla_song_lyrics/bangla_song_001.dart';
 import 'bangla_song_lyrics/bangla_song_002.dart';
 import 'bangla_song_lyrics/bangla_song_003.dart';
@@ -32,9 +35,6 @@ import 'bangla_song_lyrics/bangla_song_029.dart';
 import 'bangla_song_lyrics/bangla_song_030.dart';
 import 'bangla_song_lyrics/bangla_song_031.dart';
 import 'bangla_song_lyrics/bangla_song_032.dart';
-import 'widget/chapter_item_widget.dart';
-import 'arabic_lyrics/arabic_001.dart';
-import 'widget/colors.dart';
 
 class BanglaSongsLyricListScreen extends StatefulWidget {
   const BanglaSongsLyricListScreen({super.key});
@@ -49,23 +49,9 @@ class _BanglaSongsLyricListScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          'Bangla Songs Lyrics',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
-        //backgroundColor: ColorRes.title,
+      appBar: const GlobalAppBar(
+        title: "Bangla Songs Lyrics",
       ),
-      //drawer: const SideberMenuWidget(),
       body: SafeArea(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
