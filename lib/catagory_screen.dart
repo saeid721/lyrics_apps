@@ -10,14 +10,14 @@ import 'widget/colors.dart';
 import 'widget/catagory_card.dart';
 import 'widget/sidebar_menu_widget.dart';
 
-class CatagoryHomeScreen extends StatefulWidget {
-  const CatagoryHomeScreen({super.key});
+class CategoryHomeScreen extends StatefulWidget {
+  const CategoryHomeScreen({super.key});
 
   @override
-  State<CatagoryHomeScreen> createState() => _CatagoryHomeScreenState();
+  State<CategoryHomeScreen> createState() => _CategoryHomeScreenState();
 }
 
-class _CatagoryHomeScreenState extends State<CatagoryHomeScreen> {
+class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
