@@ -10,7 +10,7 @@ class ContactUsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 1,
-        shadowColor: ColorRes.border,
+        shadowColor: ColorRes.borderColor,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
           'Contact Us',

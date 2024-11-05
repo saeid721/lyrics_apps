@@ -12,7 +12,7 @@ class BanglaThirtyScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 1,
-        shadowColor: ColorRes.border,
+        shadowColor: ColorRes.borderColor,
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
@@ -30,7 +30,7 @@ class BanglaThirtyScreen extends StatelessWidget {
         child: Column(
           children: [
             GlobalContainer(
-              backgroundColor: ColorRes.background,
+              backgroundColor: ColorRes.backgroundColor,
               width: Get.width,
               child: Padding(
                 padding: const EdgeInsets.all(10),

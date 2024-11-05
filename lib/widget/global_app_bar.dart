@@ -21,7 +21,7 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: elevation,
-      shadowColor: ColorRes.border,
+      shadowColor: ColorRes.borderColor,
       backgroundColor: backgroundColor,
       iconTheme: IconThemeData(color: iconColor),
       title: Text(

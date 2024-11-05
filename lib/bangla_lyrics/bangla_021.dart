@@ -12,7 +12,7 @@ class BanglaTwentyOneScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 1,
-        shadowColor: ColorRes.border,
+        shadowColor: ColorRes.borderColor,
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
@@ -30,7 +30,7 @@ class BanglaTwentyOneScreen extends StatelessWidget {
         child: Column(
           children: [
             GlobalContainer(
-              backgroundColor: ColorRes.background,
+              backgroundColor: ColorRes.backgroundColor,
               width: Get.width,
               child: Padding(
                 padding: const EdgeInsets.all(15),
@@ -38,7 +38,7 @@ class BanglaTwentyOneScreen extends StatelessWidget {
                   backgroundColor: ColorRes.white,
                   elevation: 2.0,
                   borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
+                  bottomBorderColor: ColorRes.borderColor,
                   width: Get.width,
                   child: const Padding(
                     padding: EdgeInsets.all(10),

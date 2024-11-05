@@ -16,7 +16,7 @@ class SongsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GlobalContainer(
-      backgroundColor: ColorRes.background,
+      backgroundColor: ColorRes.backgroundColor,
       width: Get.width,
       child: Padding(
         padding: const EdgeInsets.all(10),

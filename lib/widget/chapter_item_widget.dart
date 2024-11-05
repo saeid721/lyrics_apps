@@ -39,7 +39,7 @@ class ChapterItem extends StatelessWidget {
             ), // Add top-right and bottom-left border radius
             border: const Border(
               bottom: BorderSide(
-                color: ColorRes.border, // Set the bottom border color
+                color: ColorRes.borderColor, // Set the bottom border color
                 width: 1.0, // Set the border width
               ),
             ), // Add bottom border with primary color
@@ -57,7 +57,7 @@ class ChapterItem extends StatelessWidget {
               ),
               Icon(
                 icon,
-                color: ColorRes.border,
+                color: ColorRes.borderColor,
                 size: 16,
               ),
             ],

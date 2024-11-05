@@ -23,7 +23,7 @@ class CatagoryCard extends StatelessWidget {
       onTap: onTap,
       child: Card(
         elevation: 2,
-        shadowColor: ColorRes.border,
+        shadowColor: ColorRes.borderColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(5),
         ),
@@ -35,7 +35,7 @@ class CatagoryCard extends StatelessWidget {
             color: ColorRes.white,
             border: const Border(
               bottom: BorderSide(
-                color: ColorRes.border, // Define the color of the bottom border
+                color: ColorRes.borderColor, // Define the color of the bottom border
                 width: 1.0, // Set the thickness of the bottom border
               ),
             ),
