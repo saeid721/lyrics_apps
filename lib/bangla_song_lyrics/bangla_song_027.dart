@@ -1,49 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongTwentySevenScreen extends StatelessWidget {
   const BanglaSongTwentySevenScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "এখনো মাঝে মাঝে",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "এখনো মাঝে মাঝে",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """এখনো মাঝে মাঝে
+            SongsWidget(
+              description: """এখনো মাঝে মাঝে
 মাঝ রাতে ঘুমের ঘরে
 শুনি তোমার পায়ের আওয়াজ
 যেনো তুমি এসেছো ফিরে
@@ -96,11 +68,8 @@ class BanglaSongTwentySevenScreen extends StatelessWidget {
 এই মনের আঙ্গিনা ছেড়ে
 তুমি চলে গেছো অনেক দূরে
 এই মনের আঙ্গিনা ছেড়ে""",
-                    ),
-                  ),
-                ),
-              ),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),

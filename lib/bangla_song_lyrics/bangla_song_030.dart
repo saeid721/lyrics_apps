@@ -1,48 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongThirtyScreen extends StatelessWidget {
   const BanglaSongThirtyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "দেখা হবে, বন্ধু, কারণে আর অকারণে",
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "দেখা হবে, বন্ধু, কারণে আর অকারণে",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(5),
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """দেখা হবে, বন্ধু, কারণে আর অকারণে
+            SongsWidget(
+              description: """দেখা হবে, বন্ধু, কারণে আর অকারণে
 দেখা হবে, বন্ধু, চাপা কোনো অভিমানে
 দেখা হবে, বন্ধু, সাময়িক বৈরিতায়
 অস্থির অপাগরতায়
@@ -68,12 +41,8 @@ class BanglaSongThirtyScreen extends StatelessWidget {
 দেখা হবে, বন্ধু, চাপা কোনো অভিমানে
 দেখা হবে, বন্ধু, সাময়িক বৈরিতায়
 অস্থির অপাগরতায়""",
-                    ),
-                  ),
-                ),
-              ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: 10),
           ],
         ),
       ),
