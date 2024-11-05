@@ -187,35 +187,35 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'আমার সোনার ময়না পাখি',
                   onTap: () {
                     Get.to(() => const BanglaSongSeventeenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'আমার সোনা বন্ধুরে, তুমি কোথায় রইলারে',
                   onTap: () {
                     Get.to(() => const BanglaSongEighteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'কি জ্বালা দিয়ে গেলা মোরে',
                   onTap: () {
                     Get.to(() => const BanglaSongNineteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'কতটা দুঃখ দেবে তুমি',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentyScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'আমার মতে তোর মতন কেউ নেই',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentyOneScreen());
                   },
@@ -229,7 +229,7 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'মানুষ',
+                  title: 'ভালোবাসা মানে হলো বিশ্বাসের একটা ব্যাপার',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentyThreeScreen());
                   },
@@ -250,7 +250,7 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'এসব',
+                  title: 'আমি শুনেছি সেদিন তুমি',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentySixScreen());
                   },
