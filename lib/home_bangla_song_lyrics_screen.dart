@@ -173,14 +173,14 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'মানুষ একটা দুই চাকার সাইকেল',
                   onTap: () {
                     Get.to(() => const BanglaSongFifteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'এসব দেখি কানার হাট বাজার',
                   onTap: () {
                     Get.to(() => const BanglaSongSixteenScreen());
                   },
@@ -229,7 +229,7 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'মানুষ একটা দুই চাকার সাইকেল',
+                  title: 'মানুষ',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentyThreeScreen());
                   },
@@ -250,7 +250,7 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'এসব দেখি কানার হাট বাজার',
+                  title: 'এসব',
                   onTap: () {
                     Get.to(() => const BanglaSongTwentySixScreen());
                   },
@@ -301,147 +301,147 @@ class _BanglaSongsLyricListScreenState
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaTwentyFiveScreen());
+                //     Get.to(() => const BanglaSongThirtyThreeScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaTwentySixScreen());
+                //     Get.to(() => const BanglaSongThirtyFourScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaTwentySevenScreen());
+                //     Get.to(() => const BanglaSongThirtyFiveScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaTwentyEightScreen());
+                //     Get.to(() => const BanglaSongThirtySixScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaTwentyNineScreen());
+                //     Get.to(() => const BanglaSongThirtySevenScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaThirtyScreen());
+                //     Get.to(() => const BanglaSongThirtyEightScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongThirtyNineScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 // const SizedBox(height: 5),
                 // ChapterItem(
                 //   title: 'Lorem',
                 //   onTap: () {
-                //     Get.to(() => const BanglaFiveScreen());
+                //     Get.to(() => const BanglaSongFortyScreen());
                 //   },
                 // ),
                 const SizedBox(height: 5),
