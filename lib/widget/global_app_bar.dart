@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final double elevation;
   final Color backgroundColor;
   final Color titleColor;
   final Color iconColor;
 
-  const CustomAppBar({
+  const GlobalAppBar({
     super.key,
     required this.title,
     this.elevation = 1,

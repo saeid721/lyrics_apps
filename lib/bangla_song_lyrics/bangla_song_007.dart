@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widget/custom_app_bar.dart';
+import '../widget/global_app_bar.dart';
 import '../widget/songs_widget.dart';
 
 class BanglaSongSevenScreen extends StatelessWidget {
@@ -8,7 +8,7 @@ class BanglaSongSevenScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: CustomAppBar(
+      appBar: GlobalAppBar(
         title: "সাই রাব্বানা এই দুনিয়ায় পাঠাইয়া কেন",
       ),
       body: SingleChildScrollView(

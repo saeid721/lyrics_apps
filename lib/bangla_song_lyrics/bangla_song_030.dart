@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widget/custom_app_bar.dart';
+import '../widget/global_app_bar.dart';
 import '../widget/songs_widget.dart';
 
 class BanglaSongThirtyScreen extends StatelessWidget {
@@ -8,7 +8,7 @@ class BanglaSongThirtyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: CustomAppBar(
+      appBar: GlobalAppBar(
         title: "দেখা হবে, বন্ধু, কারণে আর অকারণে",
       ),
       body: SingleChildScrollView(

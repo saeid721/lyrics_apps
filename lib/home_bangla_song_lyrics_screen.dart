@@ -292,7 +292,7 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি',
+                  title: 'আতর গোলাপ শুয়া চন্দন',
                   onTap: () {
                     Get.to(() => const BanglaSongThirtyTwoScreen());
                   },
