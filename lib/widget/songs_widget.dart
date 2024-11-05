@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'colors.dart';
+import 'global_container.dart';
+import 'global_text.dart';
+
+class SongsWidget extends StatelessWidget {
+  final String description;
+
+  const SongsWidget({
+    super.key,
+    required this.description,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GlobalContainer(
+      backgroundColor: ColorRes.background,
+      width: Get.width,
+      child: Padding(
+        padding: const EdgeInsets.all(10),
+        child: GlobalContainer(
+          backgroundColor: ColorRes.white,
+          elevation: 2.0,
+          borderCornerRadius: BorderRadius.circular(5),
+          width: Get.width,
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                GlobalText(
+                  str: description,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

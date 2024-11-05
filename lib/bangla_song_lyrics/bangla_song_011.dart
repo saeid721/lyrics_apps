@@ -1,49 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongElevenScreen extends StatelessWidget {
   const BanglaSongElevenScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "আমি চিৎকার করে কাদিতে চাহিয়া",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "আমি চিৎকার করে কাদিতে চাহিয়া",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """কতটুকু অশ্রু গড়ালে হৃদয় জলে সিক্ত,
+            SongsWidget(
+              description: """কতটুকু অশ্রু গড়ালে হৃদয় জলে সিক্ত,
 কত প্রদীপ শিখা জ্বালালেই
 জীবন আলোয় ত্রিপ্ত।
 কত ব্যথা বুকে চাপালেই
@@ -108,11 +80,8 @@ class BanglaSongElevenScreen extends StatelessWidget {
 কত ব্যথা বুকে চাপালেই
 তাকে বলি আমি ধৈর্য,
 নির্মমতা কতদূর হলে জাতি হবে নির্লজ্জ।""",
-                    ),
-                  ),
-                ),
-              ),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),

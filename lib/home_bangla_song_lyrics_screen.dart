@@ -1,14 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'bangla_lyrics/bangla_022.dart';
-import 'bangla_lyrics/bangla_023.dart';
-import 'bangla_lyrics/bangla_024.dart';
-import 'bangla_lyrics/bangla_025.dart';
-import 'bangla_lyrics/bangla_026.dart';
-import 'bangla_lyrics/bangla_027.dart';
-import 'bangla_lyrics/bangla_028.dart';
-import 'bangla_lyrics/bangla_029.dart';
-import 'bangla_lyrics/bangla_030.dart';
 import 'bangla_song_lyrics/bangla_song_001.dart';
 import 'bangla_song_lyrics/bangla_song_002.dart';
 import 'bangla_song_lyrics/bangla_song_003.dart';
@@ -22,6 +13,23 @@ import 'bangla_song_lyrics/bangla_song_010.dart';
 import 'bangla_song_lyrics/bangla_song_011.dart';
 import 'bangla_song_lyrics/bangla_song_012.dart';
 import 'bangla_song_lyrics/bangla_song_013.dart';
+import 'bangla_song_lyrics/bangla_song_014.dart';
+import 'bangla_song_lyrics/bangla_song_015.dart';
+import 'bangla_song_lyrics/bangla_song_016.dart';
+import 'bangla_song_lyrics/bangla_song_017.dart';
+import 'bangla_song_lyrics/bangla_song_018.dart';
+import 'bangla_song_lyrics/bangla_song_019.dart';
+import 'bangla_song_lyrics/bangla_song_020.dart';
+import 'bangla_song_lyrics/bangla_song_021.dart';
+import 'bangla_song_lyrics/bangla_song_022.dart';
+import 'bangla_song_lyrics/bangla_song_023.dart';
+import 'bangla_song_lyrics/bangla_song_024.dart';
+import 'bangla_song_lyrics/bangla_song_025.dart';
+import 'bangla_song_lyrics/bangla_song_026.dart';
+import 'bangla_song_lyrics/bangla_song_027.dart';
+import 'bangla_song_lyrics/bangla_song_028.dart';
+import 'bangla_song_lyrics/bangla_song_029.dart';
+import 'bangla_song_lyrics/bangla_song_030.dart';
 import 'bangla_song_lyrics/bangla_song_031.dart';
 import 'bangla_song_lyrics/bangla_song_032.dart';
 import 'widget/chapter_item_widget.dart';
@@ -158,79 +166,135 @@ class _BanglaSongsLyricListScreenState
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'মানুষ একটা দুই চাকার সাইকেল',
+                  title: 'কফি হাউজের সেই আড্ডাটা',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyThreeScreen());
+                    Get.to(() => const BanglaSongFourteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'ও বন্ধুরে তুমি মোরে ভুইলা যাইও না',
+                  title: 'কফি',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyFourScreen());
+                    Get.to(() => const BanglaSongFifteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'দেখেছি রুপ সাগরে মনের মানুষ',
+                  title: 'কফি',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyFiveScreen());
+                    Get.to(() => const BanglaSongSixteenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'এসব দেখি কানার হাট বাজার',
+                  title: 'কফি',
                   onTap: () {
-                    Get.to(() => const BanglaTwentySixScreen());
+                    Get.to(() => const BanglaSongSeventeenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'এখনো মাঝে মাঝে',
+                  title: 'কফি',
                   onTap: () {
-                    Get.to(() => const BanglaTwentySevenScreen());
+                    Get.to(() => const BanglaSongEighteenScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'কফি',
+                  onTap: () {
+                    Get.to(() => const BanglaSongNineteenScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'কফি',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentyScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'কফি',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentyOneScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'বন্ধু তোমায় মনে পড়ে',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyTwoScreen());
+                    Get.to(() => const BanglaSongTwentyTwoScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'মানুষ একটা দুই চাকার সাইকেল',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentyThreeScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'ও বন্ধুরে তুমি মোরে ভুইলা যাইও না',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentyFourScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'দেখেছি রুপ সাগরে মনের মানুষ',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentyFiveScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'এসব দেখি কানার হাট বাজার',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentySixScreen());
+                  },
+                ),
+                const SizedBox(height: 5),
+                ChapterItem(
+                  title: 'এখনো মাঝে মাঝে',
+                  onTap: () {
+                    Get.to(() => const BanglaSongTwentySevenScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'কত আদর সোহাগ দিলাম',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyEightScreen());
+                    Get.to(() => const BanglaSongTwentyEightScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'তখন তোমার একুশ বছর বোধ হয়',
                   onTap: () {
-                    Get.to(() => const BanglaTwentyNineScreen());
+                    Get.to(() => const BanglaSongTwentyNineScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'দেখা হবে, বন্ধু, কারণে আর অকারণে',
                   onTap: () {
-                    Get.to(() => const BanglaThirtyScreen());
+                    Get.to(() => const BanglaSongThirtyScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
                   title: 'যেদিন বন্ধু চলে যাবো',
                   onTap: () {
-                    Get.to(() => const BanglaThirtyOneScreen());
+                    Get.to(() => const BanglaSongThirtyOneScreen());
                   },
                 ),
                 const SizedBox(height: 5),
                 ChapterItem(
-                  title: 'কফি হাউজের সেই আড্ডাটা',
+                  title: 'কফি',
                   onTap: () {
-                    Get.to(() => const BanglaThirtyTwoScreen());
+                    Get.to(() => const BanglaSongThirtyTwoScreen());
                   },
                 ),
                 const SizedBox(height: 5),

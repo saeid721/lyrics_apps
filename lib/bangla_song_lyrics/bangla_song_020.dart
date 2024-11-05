@@ -16,7 +16,7 @@ class BanglaSongTwentyScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: ColorRes.primaryColor),
         title: const Text(
-          "আমার মতো এতো সুখী নয় তো কারো জীবন",
+          "আমার",
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w700,

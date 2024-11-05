@@ -1,49 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongEightScreen extends StatelessWidget {
   const BanglaSongEightScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "আমি তো মরে যাবো",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "আমি তো মরে যাবো",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """আমি তো মরে যাবো
+            SongsWidget(
+              description: """আমি তো মরে যাবো
 আমি তো মরে যাবো
 চলে যাবো রেখে যাবো সবি
 আছস কি কেউ সঙ্গের সাথী
@@ -125,11 +97,8 @@ class BanglaSongEightScreen extends StatelessWidget {
 আমি তো মরে যাবো
 চলে যাবো রেখে যাবো সবি
 আছস কি কেউ সঙ্গের সাথী""",
-                    ),
-                  ),
-                ),
-              ),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),

@@ -1,49 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongTenScreen extends StatelessWidget {
   const BanglaSongTenScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "ছেলে আমার মস্ত মানুষ মস্ত অফিসার",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "ছেলে আমার মস্ত মানুষ মস্ত অফিসার",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """ছেলে আমার মস্ত মানুষ মস্ত অফিসার
+            SongsWidget(
+              description: """ছেলে আমার মস্ত মানুষ মস্ত অফিসার
 মস্ত ফ্ল্যাটে যায়না দেখা এপার ওপার
 ছেলে আমার মস্ত মানুষ মস্ত অফিসার
 মস্ত ফ্ল্যাটে যায়না দেখা এপার ওপার
@@ -81,11 +53,8 @@ class BanglaSongTenScreen extends StatelessWidget {
 মুখোমুখি আমি খোকা আর বৃদ্ধাশ্রম
 মুখোমুখি আমি খোকা আর বৃদ্ধাশ্রম
 ..মুখোমুখি আমি খোকা আর বৃদ্ধাশ্রম""",
-                    ),
-                  ),
-                ),
-              ),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),

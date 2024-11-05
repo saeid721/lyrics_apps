@@ -1,49 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import '../widget/colors.dart';
-import '../widget/global_container.dart';
-import '../widget/global_text.dart';
+import '../widget/custom_app_bar.dart';
+import '../widget/songs_widget.dart';
 
 class BanglaSongTwoScreen extends StatelessWidget {
   const BanglaSongTwoScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 1,
-        shadowColor: ColorRes.border,
-        backgroundColor: Colors.white,
-        iconTheme: const IconThemeData(color: ColorRes.primaryColor),
-        title: const Text(
-          "মায়ের, একধার দুধের দাম",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: ColorRes.primaryColor,
-          ),
-        ),
-        centerTitle: true,
+    return const Scaffold(
+      appBar: CustomAppBar(
+        title: "মায়ের, একধার দুধের দাম",
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            GlobalContainer(
-              backgroundColor: ColorRes.background,
-              width: Get.width,
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: GlobalContainer(
-                  backgroundColor: ColorRes.white,
-                  elevation: 2.0,
-                  borderCornerRadius: BorderRadius.circular(10),
-                  bottomBorderColor: ColorRes.border,
-                  width: Get.width,
-                  child: const Padding(
-                    padding: EdgeInsets.all(10),
-                    child: GlobalText(
-                      str: """মায়ের, একধার দুধের দাম
+            SongsWidget(
+              description: """মায়ের, একধার দুধের দাম
 কাটিয়া গায়ের চাম
 একধার দুধের দাম...
 মায়ের, একধার দুধের দাম
@@ -103,11 +75,8 @@ class BanglaSongTwoScreen extends StatelessWidget {
 কেউ হবেনা আমার মা...
 এমন দরদি ভবে,
 কেউ হবেনা আমার মা-গো""",
-                    ),
-                  ),
-                ),
-              ),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),
