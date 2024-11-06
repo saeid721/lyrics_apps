@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/lyric_controller.dart';
 import '../widget/chapter_item_widget.dart';
+import '../widget/colors.dart';
 import '../widget/global_app_bar.dart';
 import 'AddBanglaSongsLyricScreen.dart';
 import 'BanglaSongsFullLyricScreen.dart';
@@ -50,7 +51,7 @@ class BanglaSongsLyricListScreen extends StatelessWidget {
           Get.to(() => const AddBanglaSongsLyricScreen());
         },
         tooltip: "Add New Lyric",
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add, color: ColorRes.primaryColor),
       ),
     );
   }

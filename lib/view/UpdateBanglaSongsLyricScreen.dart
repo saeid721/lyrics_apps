@@ -4,17 +4,24 @@ import '../controller/lyric_controller.dart';
 import '../widget/global_app_bar.dart';
 import '../widget/global_button.dart';
 import '../widget/global_textform_field.dart';
+import '../model/lyric_model.dart';
 
-class AddBanglaSongsLyricScreen extends StatelessWidget {
-  const AddBanglaSongsLyricScreen({super.key});
+class UpdateBanglaSongsLyricScreen extends StatelessWidget {
+  final Lyric lyric;
+
+  const UpdateBanglaSongsLyricScreen({super.key, required this.lyric});
 
   @override
   Widget build(BuildContext context) {
     final LyricController controller = Get.put(LyricController());
 
+    // Set the initial values of the text fields with the passed lyric
+    controller.titleController.text = lyric.title;
+    controller.fullLyricController.text = lyric.fullLyric;
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      appBar: const GlobalAppBar(title: "Add Bangla Songs Lyrics"),
+      appBar: const GlobalAppBar(title: "Update Bangla Songs Lyrics"),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(15),
@@ -23,7 +30,7 @@ class AddBanglaSongsLyricScreen extends StatelessWidget {
               GlobalTextFormField(
                 controller: controller.titleController,
                 titleText: 'Lyric Title',
-                hintText: 'Enter Lyric Title',
+                hintText: 'Update Lyric Title',
                 isDense: true,
                 maxLine: 1,
                 filled: true,
@@ -32,16 +39,19 @@ class AddBanglaSongsLyricScreen extends StatelessWidget {
               GlobalTextFormField(
                 controller: controller.fullLyricController,
                 titleText: 'Full Lyric',
-                hintText: 'Enter Full Lyric',
+                hintText: 'Update Full Lyric',
                 isDense: true,
                 maxLine: 20,
                 filled: true,
               ),
               const SizedBox(height: 20),
               GlobalButtonWidget(
-                str: 'Submit',
+                str: 'Update',
                 height: 45,
-                onTap: controller.addLyric,
+                onTap: () {
+                  // Call the controller's updateLyric function
+                  controller.updateLyric(lyric.id);
+                },
               ),
             ],
           ),

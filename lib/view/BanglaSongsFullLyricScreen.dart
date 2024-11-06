@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../model/lyric_model.dart';
+import '../widget/colors.dart';
 import '../widget/global_app_bar.dart';
 import '../widget/songs_widget.dart';
+import 'UpdateBanglaSongsLyricScreen.dart';
 
 class BanglaSongsFullLyricScreen extends StatelessWidget {
   final Lyric lyric;
@@ -19,6 +22,14 @@ class BanglaSongsFullLyricScreen extends StatelessWidget {
             const SizedBox(height: 10),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Passing the current lyric to the update screen
+          Get.to(() => UpdateBanglaSongsLyricScreen(lyric: lyric));
+        },
+        tooltip: "Update Lyric",
+        child: const Icon(Icons.edit, color: ColorRes.primaryColor),
       ),
     );
   }
