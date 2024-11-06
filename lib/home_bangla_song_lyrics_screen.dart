@@ -40,18 +40,14 @@ class BanglaSongsLyricListScreen extends StatefulWidget {
   const BanglaSongsLyricListScreen({super.key});
 
   @override
-  State<BanglaSongsLyricListScreen> createState() =>
-      _BanglaSongsLyricListScreenState();
+  State<BanglaSongsLyricListScreen> createState() => _BanglaSongsLyricListScreenState();
 }
 
-class _BanglaSongsLyricListScreenState
-    extends State<BanglaSongsLyricListScreen> {
+class _BanglaSongsLyricListScreenState extends State<BanglaSongsLyricListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const GlobalAppBar(
-        title: "Bangla Songs Lyrics",
-      ),
+      appBar: const GlobalAppBar(title: "Bangla Songs Lyrics"),
       body: SafeArea(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
