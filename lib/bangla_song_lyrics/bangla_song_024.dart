@@ -15,7 +15,7 @@ class BanglaSongTwentyFourScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ও বন্ধু তোমার বাড়ি তোমার ঘর
+              fullLyric: """ও বন্ধু তোমার বাড়ি তোমার ঘর
 তোমার আঙ্গিনা
 সব খানে বিচরন করি
 তুমি জানো না

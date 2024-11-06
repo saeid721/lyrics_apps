@@ -15,7 +15,7 @@ class BanglaSongThirtyScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """দেখা হবে, বন্ধু, কারণে আর অকারণে
+              fullLyric: """দেখা হবে, বন্ধু, কারণে আর অকারণে
 দেখা হবে, বন্ধু, চাপা কোনো অভিমানে
 দেখা হবে, বন্ধু, সাময়িক বৈরিতায়
 অস্থির অপাগরতায়

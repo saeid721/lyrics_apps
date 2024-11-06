@@ -15,7 +15,7 @@ class BanglaSongNineteenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ কি জ্বালা দিয়ে গেলা মোরে
+              fullLyric: """ কি জ্বালা দিয়ে গেলা মোরে
 নয়নের কাজল পরানের বন্ধুরে
 না দেখিলে পরান পোড়ে
 কি দুঃখ দিয়ে গেলা মোরে

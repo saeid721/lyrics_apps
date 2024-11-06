@@ -15,7 +15,7 @@ class BanglaSongFifteenScreen extends StatelessWidget {
         child: Column(
           children: [
           SongsWidget(
-          description: """হাওয়ার উপর চলে গাড়ি
+          fullLyric: """হাওয়ার উপর চলে গাড়ি
 হাওয়ার উপর চলে গাড়ি
 লাগেনা পেট্রোল ডিজেল
 মানুষ একটা দুই চাকার সাইকেল

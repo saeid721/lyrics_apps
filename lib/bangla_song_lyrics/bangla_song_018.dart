@@ -15,7 +15,7 @@ class BanglaSongEighteenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ আমার সোনা বন্ধুরে, তুমি কোথায় রইলারে
+              fullLyric: """ আমার সোনা বন্ধুরে, তুমি কোথায় রইলারে
 দিনে রাইতে তোমায় আমি খুঁইজা মরিরে
 
 আমার সোনা বন্ধুরে, তুমি কোথায় রইলারে

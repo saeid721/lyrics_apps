@@ -15,7 +15,7 @@ class BanglaSongElevenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """কতটুকু অশ্রু গড়ালে হৃদয় জলে সিক্ত,
+              fullLyric: """কতটুকু অশ্রু গড়ালে হৃদয় জলে সিক্ত,
 কত প্রদীপ শিখা জ্বালালেই
 জীবন আলোয় ত্রিপ্ত।
 কত ব্যথা বুকে চাপালেই

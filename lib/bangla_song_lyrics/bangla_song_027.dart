@@ -15,7 +15,7 @@ class BanglaSongTwentySevenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """এখনো মাঝে মাঝে
+              fullLyric: """এখনো মাঝে মাঝে
 মাঝ রাতে ঘুমের ঘরে
 শুনি তোমার পায়ের আওয়াজ
 যেনো তুমি এসেছো ফিরে

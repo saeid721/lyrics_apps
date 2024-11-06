@@ -15,7 +15,7 @@ class BanglaSongFourScreen extends StatelessWidget {
         child: Column(
           children: [
           SongsWidget(
-          description: """ছেলে আমার বড় হবে 
+          fullLyric: """ছেলে আমার বড় হবে 
 "মাকে বলত সেকথা" 
 হবে মানুষের মত মানুষ এক, 
 লেখা ইতিহাসের পাতায়"

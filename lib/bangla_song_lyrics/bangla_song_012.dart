@@ -15,7 +15,7 @@ class BanglaSongTwelveScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """আমার আমি নাই রে, আমার আমি নাই
+              fullLyric: """আমার আমি নাই রে, আমার আমি নাই
 আমার আমি নাই রে, আমার আমি নাই
 
 ছেরা পলিথিনের মত হাওয়ায় হাওয়ায় ঊরি,

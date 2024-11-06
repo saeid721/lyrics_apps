@@ -15,7 +15,7 @@ class BanglaSongFourteenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ হুম হুম হুম হুম হুম হুম
+              fullLyric: """ হুম হুম হুম হুম হুম হুম
 হুম হুম হুম হুম
 হুম হুম হুম হুম.....
 লালা লাল,লালাল লা,

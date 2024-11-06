@@ -15,7 +15,7 @@ class BanglaSongTenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ছেলে আমার মস্ত মানুষ মস্ত অফিসার
+              fullLyric: """ছেলে আমার মস্ত মানুষ মস্ত অফিসার
 মস্ত ফ্ল্যাটে যায়না দেখা এপার ওপার
 ছেলে আমার মস্ত মানুষ মস্ত অফিসার
 মস্ত ফ্ল্যাটে যায়না দেখা এপার ওপার

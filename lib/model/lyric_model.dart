@@ -1,19 +1,19 @@
 class Lyric {
   final int? id;
   final String title;
-  final String description;
+  final String fullLyric;
 
   Lyric({
     this.id,
     required this.title,
-    required this.description,
+    required this.fullLyric,
   });
 
   Map<String, dynamic> toMap() {
     return {
       'id': id,
       'title': title,
-      'description': description,
+      'fullLyric': fullLyric,
     };
   }
 
@@ -21,7 +21,7 @@ class Lyric {
     return Lyric(
       id: map['id'],
       title: map['title'],
-      description: map['description'],
+      fullLyric: map['fullLyric'],
     );
   }
 }

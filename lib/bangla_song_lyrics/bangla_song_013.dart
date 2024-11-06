@@ -15,7 +15,7 @@ class BanglaSongThirteenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """দুই দিনের লাগিয়া রে মানুষ
+              fullLyric: """দুই দিনের লাগিয়া রে মানুষ
 দুই দিনের লাগিয়া রে মানুষ কেন বা পাঠায়
 এই ভাবে পাঠায় মানুষ কত অসহায়
 খালি হাতে যায়রে মানুষ

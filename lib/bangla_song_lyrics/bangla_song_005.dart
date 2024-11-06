@@ -15,7 +15,7 @@ class BanglaSongFiveScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """আল কিনারে নাহর গাছে বগা বগা ফুল
+              fullLyric: """আল কিনারে নাহর গাছে বগা বগা ফুল
 ফুল কে দেখিয়া ছুড়ি হ্যাচাকে চামড়ায়,
 গাছের মধ্যে তুলসী বাটার মধ্যে পান
 সাদা সাহেব ফাঁকি দিয়া চলাইলি আসাম,

@@ -22,9 +22,9 @@ class LyricController extends GetxController {
 
   void addLyric() async {
     String title = titleController.text.trim();
-    String description = fullLyricController.text.trim();
+    String fullLyric = fullLyricController.text.trim();
     if (title.isNotEmpty) {
-      Lyric newLyric = Lyric(title: title, description: description);
+      Lyric newLyric = Lyric(title: title, fullLyric: fullLyric);
       await _repository.insertLyric(newLyric);
       clearInputs();
       fetchLyrics();

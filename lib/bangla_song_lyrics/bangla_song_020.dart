@@ -15,7 +15,7 @@ class BanglaSongTwentyScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """কতটা দুঃখ দেবে তুমি
+              fullLyric: """কতটা দুঃখ দেবে তুমি
 আমি দু: খ্যকে ভয় করি না
 সহস্রবার আঘাত করলেও
 তবু করুনা তোমার চাইনা

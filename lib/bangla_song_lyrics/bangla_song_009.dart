@@ -15,7 +15,7 @@ class BanglaSongNineScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """
+              fullLyric: """
 জাত গেল জাত গেল বলে
 একি আজব কারখানা
 জাত গেল জাত গেল বলে

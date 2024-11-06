@@ -15,7 +15,7 @@ class BanglaSongSeventeenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ আমার, সোনার ময়না পাখি
+              fullLyric: """ আমার, সোনার ময়না পাখি
 কোন দেশেতে গেলা উইড়া রে....এ..
 দিয়া মোরে ফাঁকি রে
 আমার সোনার ময়না পাখি ।

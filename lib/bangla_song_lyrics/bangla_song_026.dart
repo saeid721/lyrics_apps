@@ -15,7 +15,7 @@ class BanglaSongTwentySixScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """আমি শুনেছি সেদিন তুমি সাগরের ঢেউয়ে চেপে
+              fullLyric: """আমি শুনেছি সেদিন তুমি সাগরের ঢেউয়ে চেপে
 নীলজল দিগন্ত ছুঁয়ে এসেছো
 আমি শুনেছি সেদিন তুমি নোনা বালি তীর ধরে
 বহু দূর বহু দূর হেটে এসেছ

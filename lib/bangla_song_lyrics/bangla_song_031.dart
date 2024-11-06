@@ -15,7 +15,7 @@ class BanglaSongThirtyOneScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """যেদিন বন্ধু চলে যাব
+              fullLyric: """যেদিন বন্ধু চলে যাব
 চলে যাব বহুদূরে
 ক্ষমা করে দিও আমায়
 

@@ -15,7 +15,7 @@ class BanglaSongTwentyEightScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """কত আদর সোহাগ দিলাম
+              fullLyric: """কত আদর সোহাগ দিলাম
 জীবন যৌবন সব সঁপিলাম
 বুকে আগলায় রাইখাও তোমায়
 হইলাম আজ অচেনা

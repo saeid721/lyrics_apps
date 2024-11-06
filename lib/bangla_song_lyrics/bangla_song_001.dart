@@ -15,7 +15,7 @@ class BanglaSongOneScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """আমার মতো এত সুখী
+              fullLyric: """আমার মতো এত সুখী
 নয়তো কারো জীবন
 কি আদর স্নেহ ভালবাসায়
 জড়ানো মায়ার বাঁধন

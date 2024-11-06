@@ -6,11 +6,11 @@ import 'global_container.dart';
 import 'global_text.dart';
 
 class SongsWidget extends StatelessWidget {
-  final String description;
+  final String fullLyric;
 
   const SongsWidget({
     super.key,
-    required this.description,
+    required this.fullLyric,
   });
 
   @override
@@ -31,7 +31,7 @@ class SongsWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 GlobalText(
-                  str: description,
+                  str: fullLyric,
                 ),
               ],
             ),

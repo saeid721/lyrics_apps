@@ -15,7 +15,7 @@ class BanglaSongThirtyTwoScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """তুমি আইসো নিশি রাত
+              fullLyric: """তুমি আইসো নিশি রাত
 আমার মাথায় রাইখো হাত
 বুকেতে বুক মিলাইয়া করব মোলাকাত
 তুমি আইসো নিশি রাত

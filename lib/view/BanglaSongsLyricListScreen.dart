@@ -22,7 +22,6 @@ class BanglaSongsLyricListScreen extends StatelessWidget {
               return ListTile(
                 title: Text(controller.lyrics[index].title),
                 onTap: () {
-                  // Navigate to the full lyric screen and pass the index
                   Get.to(() => BanglaSongsFullLyricScreen(lyric: controller.lyrics[index]));
                 },
               );
@@ -34,8 +33,8 @@ class BanglaSongsLyricListScreen extends StatelessWidget {
         onPressed: () {
           Get.to(() => const AddBanglaSongsLyricScreen());
         },
-        child: const Icon(Icons.add),
         tooltip: "Add New Lyric",
+        child: const Icon(Icons.add),
       ),
     );
   }

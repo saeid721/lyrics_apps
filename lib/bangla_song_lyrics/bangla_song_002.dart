@@ -15,7 +15,7 @@ class BanglaSongTwoScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """মায়ের, একধার দুধের দাম
+              fullLyric: """মায়ের, একধার দুধের দাম
 কাটিয়া গায়ের চাম
 একধার দুধের দাম...
 মায়ের, একধার দুধের দাম

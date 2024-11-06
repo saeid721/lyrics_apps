@@ -15,7 +15,7 @@ class BanglaSongTwentyFiveScreen extends StatelessWidget {
         child: Column(
           children: [
           SongsWidget(
-          description: """বহু দিন ভাব তরঙ্গে
+          fullLyric: """বহু দিন ভাব তরঙ্গে
 ভেসেছি কতই রঙে
 সুজনের সংঙে হবে
 দেখাশুনা........

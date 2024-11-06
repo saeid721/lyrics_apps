@@ -15,7 +15,7 @@ class BanglaSongSevenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """সাই রাব্বানা 
+              fullLyric: """সাই রাব্বানা 
 এই দুনিয়ায় পাঠাইয়া কেন থাকতে দিবা না
 সাই রাব্বানা 
 এই দুনিয়ায় পাঠাইয়া কেন থাকতে দিবা না

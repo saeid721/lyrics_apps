@@ -15,7 +15,7 @@ class BanglaSongTwentyTwoScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """রংধনু ভাল লাগে নীল আকাশ ভালো লাগে
+              fullLyric: """রংধনু ভাল লাগে নীল আকাশ ভালো লাগে
 ভাল লাগে মেঘে ঢেকে চাঁদ
 তার চেয়েও ভাল লাগে
 তাঁরার উঠোনেতে জেগে থাকা সেই রাত

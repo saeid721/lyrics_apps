@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../model/lyric_model.dart';
@@ -17,24 +16,34 @@ class DatabaseHelper {
     return _database!;
   }
 
+  // Create a table with 'fullLyric' column
   Future<Database> _initDatabase() async {
     String path = join(await getDatabasesPath(), 'lyrics_database.db');
     return await openDatabase(
       path,
-      version: 1,
+      version: 2, // Incremented version to trigger migration
       onCreate: (db, version) async {
         await db.execute('''CREATE TABLE lyrics(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT,
-            description TEXT
+            fullLyric TEXT
           )''');
+      },
+      onUpgrade: (db, oldVersion, newVersion) async {
+        if (oldVersion < 2) {
+          await db.execute('''CREATE TABLE lyrics(
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              title TEXT,
+              fullLyric TEXT
+            )''');
+        }
       },
     );
   }
 
   Future<void> insertLyric(Lyric lyric) async {
     final db = await database;
-    log("Inserting Lyric: ${lyric.toMap()}"); // Debugging line
+    log("Inserting Lyric: ${lyric.toMap()}");
     await db.insert(
       'lyrics',
       lyric.toMap(),

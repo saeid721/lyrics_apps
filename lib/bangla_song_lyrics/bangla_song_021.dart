@@ -15,7 +15,7 @@ class BanglaSongTwentyOneScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ কতবার তোর আয়না ভেঙে চুরে ঘুরে তাকাই
+              fullLyric: """ কতবার তোর আয়না ভেঙে চুরে ঘুরে তাকাই
 আমার মতে তোর মতন কেউ নেই।
 কতবার তোর কাঁচা আলোয় ভিজে গান শোনাই,
 আমার মতে তোর মতন কেউ নেই।

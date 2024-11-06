@@ -16,7 +16,7 @@ class BanglaSongThirtyFiveScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """""",
+              fullLyric: """""",
             ),
             SizedBox(height: 10),
           ],

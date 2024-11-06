@@ -15,7 +15,7 @@ class BanglaSongSixteenScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """বেদ বিধির পর শাস্ত্র কানা
+              fullLyric: """বেদ বিধির পর শাস্ত্র কানা
 বেদ বিধির পর শাস্ত্র কানা
 আর এক কানা মন আমার
 এসব দেখি কানার হাট বাজার

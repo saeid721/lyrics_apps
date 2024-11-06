@@ -15,7 +15,7 @@ class BanglaSongTwentyNineScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """তখন তোমার একুশ বছর বোধ হয়
+              fullLyric: """তখন তোমার একুশ বছর বোধ হয়
 আমি তখন অষ্টাদশীর ছোঁওয়ায়
 লজ্জা জড়ানো ছন্দে কেঁপেছি
 ধরা পড়ি ছিল ভয়

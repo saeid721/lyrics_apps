@@ -15,7 +15,7 @@ class BanglaSongTwentyThreeScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """ভালোবাসা মানে হলো
+              fullLyric: """ভালোবাসা মানে হলো
 বিশ্বাসের একটা ব্যাপার,
 সারাক্ষণ চেষ্টা করি
 ছেড়া সুতা বারবার জুড়ার,

@@ -15,7 +15,7 @@ class BanglaSongSixScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """মরলে কেন কান্দে মানুষ
+              fullLyric: """মরলে কেন কান্দে মানুষ
 কান্দে কেন মরিলে
 যে চইলা যায় সে ফেরেনা
 জনম ভইরা কান্দিলে

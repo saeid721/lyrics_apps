@@ -15,7 +15,7 @@ class BanglaSongEightScreen extends StatelessWidget {
         child: Column(
           children: [
             SongsWidget(
-              description: """আমি তো মরে যাবো
+              fullLyric: """আমি তো মরে যাবো
 আমি তো মরে যাবো
 চলে যাবো রেখে যাবো সবি
 আছস কি কেউ সঙ্গের সাথী

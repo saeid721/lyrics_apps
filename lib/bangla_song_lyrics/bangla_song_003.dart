@@ -15,7 +15,7 @@ class BanglaSongThreeScreen extends StatelessWidget {
         child: Column(
           children: [
           SongsWidget(
-          description: """দশ মাস দশ দিন ধরে গর্ভে ধারণ
+          fullLyric: """দশ মাস দশ দিন ধরে গর্ভে ধারণ
 কষ্টের তীব্রতায় করেছে আমায় লালন
 হটাত কোথায় না বলে হারিয়ে গেলো
 জন্মান্তরের বাধন কোথা হারালো
