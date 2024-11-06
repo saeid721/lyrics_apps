@@ -16,9 +16,9 @@ class DatabaseHelper {
     return _database!;
   }
 
-  // Create a table with 'fullLyric' column
+  // Initialize the database and create the table if it doesn't exist
   Future<Database> _initDatabase() async {
-    String path = join(await getDatabasesPath(), 'lyrics_database.db');
+    String path = join(await getDatabasesPath(), 'assets/db/lyrics_database.db');
     return await openDatabase(
       path,
       version: 2, // Incremented version to trigger migration
@@ -31,36 +31,59 @@ class DatabaseHelper {
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
-          await db.execute('''CREATE TABLE lyrics(
-              id INTEGER PRIMARY KEY AUTOINCREMENT,
-              title TEXT,
-              fullLyric TEXT
-            )''');
+          // Handle database upgrade logic here
         }
       },
     );
   }
 
+  // Add a lyric to the database
   Future<void> insertLyric(Lyric lyric) async {
     final db = await database;
-    log("Inserting Lyric: ${lyric.toMap()}");
+    log("Adding Lyric: ${lyric.toMap()}");
     await db.insert(
       'lyrics',
       lyric.toMap(),
-      conflictAlgorithm: ConflictAlgorithm.replace,
+      conflictAlgorithm: ConflictAlgorithm.replace, // Replaces if the lyric already exists
     );
   }
 
+  // Update an existing lyric in the database
+  Future<void> updateLyric(Lyric lyric) async {
+    final db = await database;
+    log("Updating Lyric: ${lyric.toMap()}");
+    await db.update(
+      'lyrics',
+      lyric.toMap(),
+      where: 'id = ?',
+      whereArgs: [lyric.id], // Uses the id to update the correct record
+    );
+  }
+
+  // Delete a lyric by its ID
+  Future<void> deleteLyric(int id) async {
+    final db = await database;
+    log("Deleting Lyric with ID: $id");
+    await db.delete(
+      'lyrics',
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
+
+  // Delete all lyrics from the database
+  Future<void> deleteAllLyrics() async {
+    final db = await database;
+    log("Deleting all lyrics");
+    await db.delete('lyrics');
+  }
+
+  // Get all lyrics from the database
   Future<List<Lyric>> getLyrics() async {
     final db = await database;
     final List<Map<String, dynamic>> maps = await db.query('lyrics');
     return List.generate(maps.length, (i) {
       return Lyric.fromMap(maps[i]);
     });
-  }
-
-  Future<void> deleteAllLyrics() async {
-    final db = await database;
-    await db.delete('lyrics');
   }
 }
