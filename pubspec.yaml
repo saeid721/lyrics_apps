@@ -32,7 +32,7 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/db/lyrics_database.db
+    - assets/db/lyrics_database.sql
 
  
   fonts:

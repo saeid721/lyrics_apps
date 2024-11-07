@@ -18,7 +18,7 @@ class DatabaseHelper {
 
   // Initialize the database and create the table if it doesn't exist
   Future<Database> _initDatabase() async {
-    String path = join(await getDatabasesPath(), 'assets/db/lyrics_database.db');
+    String path = join(await getDatabasesPath(), 'assets/db/lyrics_database.sql');
     return await openDatabase(
       path,
       version: 2, // Incremented version to trigger migration

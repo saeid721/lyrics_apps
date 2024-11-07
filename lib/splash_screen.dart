@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'catagory_screen.dart';
-import 'view/BanglaSongsLyricListScreen.dart';
+import 'home_bangla_song_lyrics_screen.dart';
+//import 'view/BanglaSongsLyricListScreen.dart';
 
 
 class SplashScreen extends StatelessWidget {
@@ -10,8 +11,8 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context) => const BanglaSongsLyricListScreen()),
-       //MaterialPageRoute(builder: (context) => const CategoryHomeScreen()),
+      //MaterialPageRoute(builder: (context) => const BanglaSongsLyricListScreen()),
+       MaterialPageRoute(builder: (context) => const CategoryHomeScreen()),
       );
     });
 
