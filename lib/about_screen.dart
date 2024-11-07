@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../widget/colors.dart';
 import '../widget/global_text.dart';
+import 'widget/global_image_loader.dart';
+import 'widget/images.dart';
 
 class AboutUsScreen extends StatelessWidget {
   const AboutUsScreen({super.key});
@@ -28,8 +30,15 @@ class AboutUsScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 50),
+            GlobalImageLoader(
+              imagePath: Images.appLogo,
+              height: 220,
+              width: 220,
+              fit: BoxFit.fill,
+            ),
+            SizedBox(height: 15),
             GlobalText(
-              str: "Welcome to Islamic Songs Lyrics",
+              str: "Welcome to Lyrics Apps",
               fontSize: 22,
               fontWeight: FontWeight.w700,
               textAlign: TextAlign.left,

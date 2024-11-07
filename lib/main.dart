@@ -16,7 +16,7 @@ class IslamicSongsLyricsApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: ColorRes.backgroundColor),
-      title: 'Islamic Songs Lyrics',
+      title: 'Lyrics',
       home: const SplashScreen(),
     );
   }

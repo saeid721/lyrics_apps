@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'catagory_screen.dart';
-import 'home_bangla_song_lyrics_screen.dart';
-//import 'view/BanglaSongsLyricListScreen.dart';
+import 'package:songs/widget/enum.dart';
+import 'category_screen/catagory_screen.dart';
+import 'widget/colors.dart';
+import 'widget/global_image_loader.dart';
+import 'widget/images.dart';
 
 
 class SplashScreen extends StatelessWidget {
@@ -21,9 +23,15 @@ class SplashScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/SplashScreen.jpg'),
-            fit: BoxFit.cover,
+            color: ColorRes.backgroundColor
+        ),
+        child: const Center(
+          child: GlobalImageLoader(
+            imagePath: Images.appLogo,
+            height: 220,
+            width: 220,
+            fit: BoxFit.fill,
+            imageFor: ImageFor.asset,
           ),
         ),
       ),
