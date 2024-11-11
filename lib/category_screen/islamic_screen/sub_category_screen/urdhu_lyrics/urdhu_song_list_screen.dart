@@ -3,26 +3,29 @@ import 'package:get/get.dart';
 
 import '../../../../data/islamic/urdhu_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'urdhu_song_full_lyric_screen.dart';
 
 class UrdhuIslamicSongListScreen extends StatefulWidget {
   const UrdhuIslamicSongListScreen({super.key});
 
   @override
-  State<UrdhuIslamicSongListScreen> createState() =>
-      _UrdhuIslamicSongListScreenState();
+  State<UrdhuIslamicSongListScreen> createState() => _UrdhuIslamicSongListScreenState();
 }
 
-class _UrdhuIslamicSongListScreenState
-    extends State<UrdhuIslamicSongListScreen> {
+class _UrdhuIslamicSongListScreenState extends State<UrdhuIslamicSongListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "Urdhu Islamic Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
@@ -31,7 +34,7 @@ class _UrdhuIslamicSongListScreenState
                 ListView.builder(
                   itemCount: urdhuData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = urdhuData[index];
                     return Column(

@@ -3,24 +3,28 @@ import 'package:get/get.dart';
 
 import '../../../../data/genaral/hindi_songs_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'hindi_song_full_lyric_screen.dart';
 
 class HindiSongListScreen extends StatefulWidget {
   const HindiSongListScreen({super.key});
 
   @override
-  State<HindiSongListScreen> createState() =>
-      _HindiSongListScreenState();
+  State<HindiSongListScreen> createState() => _HindiSongListScreenState();
 }
 
-class _HindiSongListScreenState
-    extends State<HindiSongListScreen> {
+class _HindiSongListScreenState extends State<HindiSongListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "Hindi Songs Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Padding(
@@ -31,7 +35,7 @@ class _HindiSongListScreenState
                 ListView.builder(
                   itemCount: hindiSongsData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = hindiSongsData[index];
                     return Column(

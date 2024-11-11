@@ -3,26 +3,29 @@ import 'package:get/get.dart';
 
 import '../../../../data/genaral/english_songs_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'english_song_full_lyric_screen.dart';
 
 class EnglishSongListScreen extends StatefulWidget {
   const EnglishSongListScreen({super.key});
 
   @override
-  State<EnglishSongListScreen> createState() =>
-      _EnglishSongListScreenState();
+  State<EnglishSongListScreen> createState() => _EnglishSongListScreenState();
 }
 
-class _EnglishSongListScreenState
-    extends State<EnglishSongListScreen> {
+class _EnglishSongListScreenState extends State<EnglishSongListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "English Songs Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
@@ -31,7 +34,7 @@ class _EnglishSongListScreenState
                 ListView.builder(
                   itemCount: englishSongsData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = englishSongsData[index];
                     return Column(

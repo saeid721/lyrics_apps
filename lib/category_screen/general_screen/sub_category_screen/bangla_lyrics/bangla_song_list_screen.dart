@@ -3,7 +3,10 @@ import 'package:get/get.dart';
 
 import '../../../../data/genaral/bangla_songs_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'bangla_song_full_lyric_screen.dart';
 
 class BanglaSongListScreen extends StatefulWidget {
@@ -18,9 +21,11 @@ class _BanglaSongListScreenState extends State<BanglaSongListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "Bangla Songs Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
@@ -29,7 +34,7 @@ class _BanglaSongListScreenState extends State<BanglaSongListScreen> {
                 ListView.builder(
                   itemCount: banglaSongsData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = banglaSongsData[index];
                     return Column(

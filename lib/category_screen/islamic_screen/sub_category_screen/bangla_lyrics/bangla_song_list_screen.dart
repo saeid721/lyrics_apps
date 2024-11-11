@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../data/islamic/bangla_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'bangla_song_full_lyric_screen.dart';
 
 class BanglaIslamicSongListScreen extends StatefulWidget {
@@ -17,9 +20,11 @@ class _BanglaIslamicSongListScreenState extends State<BanglaIslamicSongListScree
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "Bangla Islamic Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
@@ -28,7 +33,7 @@ class _BanglaIslamicSongListScreenState extends State<BanglaIslamicSongListScree
                 ListView.builder(
                   itemCount: banglaData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = banglaData[index];
                     return Column(

@@ -3,26 +3,29 @@ import 'package:get/get.dart';
 
 import '../../../../data/islamic/arabic_data.dart';
 import '../../../../widget/chapter_item_widget.dart';
+import '../../../../widget/colors.dart';
 import '../../../../widget/global_app_bar.dart';
+import '../../../../widget/global_container.dart';
+import '../../../../widget/global_sizedbox.dart';
 import 'arabic_song_full_lyric_screen.dart';
 
 class ArabicIslamicSongListScreen extends StatefulWidget {
   const ArabicIslamicSongListScreen({super.key});
 
   @override
-  State<ArabicIslamicSongListScreen> createState() =>
-      _ArabicIslamicSongListScreenState();
+  State<ArabicIslamicSongListScreen> createState() => _ArabicIslamicSongListScreenState();
 }
 
-class _ArabicIslamicSongListScreenState
-    extends State<ArabicIslamicSongListScreen> {
+class _ArabicIslamicSongListScreenState extends State<ArabicIslamicSongListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const GlobalAppBar(title: "Arabic Islamic Lyrics"),
-      body: SafeArea(
+      body: GlobalContainer(
+        height: size(context).height,
+        width: size(context).width,
+        backgroundColor: ColorRes.backgroundColor,
         child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 15),
             child: Column(
@@ -31,7 +34,7 @@ class _ArabicIslamicSongListScreenState
                 ListView.builder(
                   itemCount: arabicData.length,
                   shrinkWrap: true,
-                  //physics: const NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (ctx, index) {
                     final songLyric = arabicData[index];
                     return Column(
