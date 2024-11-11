@@ -245,7 +245,7 @@ final List<BanglaSongsData> banglaSongsData = [
   ),
   BanglaSongsData(
     id: '06',
-    title: 'মনে করি আসাম যাবো',
+    title: 'মরলে কেন কান্দে মানুষ',
     fullLyric: """মরলে কেন কান্দে মানুষ
 কান্দে কেন মরিলে
 যে চইলা যায় সে ফেরেনা
