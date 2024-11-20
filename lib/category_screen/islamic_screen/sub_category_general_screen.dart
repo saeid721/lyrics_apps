@@ -24,10 +24,14 @@ class _SubCategoryIslamicScreenState extends State<SubCategoryIslamicScreen> {
   CarouselSliderController buttonCarouselController = CarouselSliderController();
 
   final List<String> sliderImage = [
-    'assets/images/01.png',
-    'assets/images/01.png',
-    'assets/images/01.png',
-    'assets/images/01.png',
+    'assets/images/06.jpg',
+    'assets/images/01.jpg',
+    'assets/images/07.jpg',
+    'assets/images/02.jpg',
+    'assets/images/03.jpg',
+    'assets/images/08.jpg',
+    'assets/images/04.jpg',
+    'assets/images/05.jpg',
   ];
 
   @override
