@@ -1,9 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../widget/category_card_widget.dart';
 import '../../widget/colors.dart';
-import '../../widget/custom_drawer_widget.dart';
 import '../../widget/global_app_bar.dart';
 import '../../widget/global_container.dart';
 import '../../widget/sub_category_card_widget.dart';
