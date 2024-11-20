@@ -1,8 +1,11 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../widget/category_card_widget.dart';
+import '../widget/colors.dart';
 import '../widget/global_app_bar.dart';
 import '../widget/custom_drawer_widget.dart';
+import '../widget/global_container.dart';
 import 'general_screen/sub_category_general_screen.dart';
 import 'islamic_screen/sub_category_general_screen.dart';
 
@@ -14,6 +17,17 @@ class CategoryHomeScreen extends StatefulWidget {
 }
 
 class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
+
+  int currentIndex = 0;
+  CarouselSliderController buttonCarouselController = CarouselSliderController();
+
+  final List<String> sliderImage = [
+    'assets/images/01.png',
+    'assets/images/01.png',
+    'assets/images/01.png',
+    'assets/images/01.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,30 +36,83 @@ class _CategoryHomeScreenState extends State<CategoryHomeScreen> {
       ),
       drawer: const CustomDrawerWidget(),
       body: SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  CategoryCardWidget(
-                    imagePath: 'assets/images/song.png',
-                    title: 'Islamic',
-                    onTap: () => Get.to(
-                            () => const SubCategoryIslamicScreen()),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            children: [
+              ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                child: CarouselSlider(
+                  items: sliderImage
+                      .map(
+                        (item) => GlobalContainer(
+                          borderCornerRadius: const BorderRadius.all(Radius.circular(10.0)),
+                          backgroundColor: ColorRes.backgroundColor,
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                        child: Image.asset(
+                          item,
+                          fit: BoxFit.cover,
+                          width: MediaQuery.of(context).size.width,
+                        ),
+                      ),
+                    ),
+                  ).toList(),
+                  carouselController: buttonCarouselController,
+                  options: CarouselOptions(
+                    scrollPhysics: const BouncingScrollPhysics(),
+                    autoPlay: true,
+                    aspectRatio: 2,
+                    viewportFraction: 1,
+                    onPageChanged: (index, reason) {
+                      setState(() {
+                        currentIndex = index;
+                      });
+                    },
                   ),
-                  const SizedBox(height: 5),
-                  CategoryCardWidget(
-                    imagePath: 'assets/images/song.png',
-                    title: 'General',
-                    onTap: () => Get.to(
-                            () => const SubCategoryGeneralScreen()),
+                ),
+              ),
+              const SizedBox(height: 5),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: sliderImage.asMap().entries.map((entry) {
+                  return AnimatedContainer(
+                    duration: const Duration(milliseconds: 300),
+                    height: 7,
+                    width: currentIndex == entry.key ? 15 : 7,
+                    margin: const EdgeInsets.symmetric(horizontal: 3),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: currentIndex == entry.key
+                          ? ColorRes.primaryColor
+                          : ColorRes.borderColor,
+                    ),
+                  );
+                }).toList(),
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(
+                    child: CategoryCardWidget(
+                      imagePath: 'assets/images/song.png',
+                      title: 'Islamic',
+                      onTap: () =>
+                          Get.to(() => const SubCategoryIslamicScreen()),
+                    ),
+                  ),
+                  const SizedBox(width: 5),
+                  Expanded(
+                    child: CategoryCardWidget(
+                      imagePath: 'assets/images/song.png',
+                      title: 'General',
+                      onTap: () => Get.to(
+                              () => const SubCategoryGeneralScreen()),
+                    ),
                   ),
                 ],
               ),
-            ),
+            ],
           ),
         ),
       ),
