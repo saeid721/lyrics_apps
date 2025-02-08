@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   get: ^4.6.6 # State Management!
   get_it: ^8.0.2
-#  sqflite: ^2.4.0
+  sqflite: ^2.4.1
   path: ^1.9.0
   intl: ^0.20.0
   image: ^4.3.0
