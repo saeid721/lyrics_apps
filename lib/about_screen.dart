@@ -38,7 +38,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             SizedBox(height: 15),
             GlobalText(
-              str: "Welcome to Lyrics Apps",
+              str: "Welcome to Lyrics",
               fontSize: 22,
               fontWeight: FontWeight.w700,
               textAlign: TextAlign.left,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:songs/widget/enum.dart';
-import 'category_screen/catagory_screen.dart';
+import 'view/category_screen/catagory_screen.dart';
 import 'widget/colors.dart';
 import 'widget/global_image_loader.dart';
 import 'widget/images.dart';
