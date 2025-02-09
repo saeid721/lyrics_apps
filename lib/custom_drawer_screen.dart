@@ -42,12 +42,12 @@ class _CustomDrawerWidgetState extends State<CustomDrawerWidget> {
                     color: ColorRes.backgroundColor,
                     border: Border.all(color: ColorRes.primaryColor, width: 0.3),
                   ),
-                  child: Text(
-                    'Lyrics',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w700),
+                  child:
+                  const GlobalText(
+                    str: """Lyrics""",
+                    fontWeight: FontWeight.w700,
+                    fontSize: 44,
+                    color: ColorRes.primaryColor,
                   ),
                 ),
 
@@ -132,14 +132,14 @@ class _CustomDrawerWidgetState extends State<CustomDrawerWidget> {
               ],
             ),
             // Bottom Description and Loader
-            Align(
+            const Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: const EdgeInsets.symmetric(
+                padding: EdgeInsets.symmetric(
                     horizontal: 32.0, vertical: 50.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const [
+                  children: [
                     GlobalText(
                       str: 'Version: 1.0.1',
                       color: ColorRes.textColor,
